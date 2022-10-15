@@ -1,0 +1,49 @@
+Python
+
+F STRING FORMATTING
+
+print(f"{var1} and {var2} are great!")
+print(f"{num1} + {num2} equals {num1+num2}")
+
+Using f string formatting avoids issues with spaces after commas and is better than using the following protocols due to minor
+errors in whitespace that some programs might be sensitive to:
+
+print("Thanks for the", var, "and", var2) 
+or
+print("Thanks for the", + var+ "and" + var2) 
+
+
+
+
+
+
+
+PRINT FUNCTION METHOD ANALYSIS
+
+	method of print function (end, sep)
+
+end = ""  
+# keeps line from breaking and adds "" to end of line
+
+end="@"
+# keeps line from breaking and adds '@" to end of first line
+
+sep=","
+#adds separators to list or multiple arguments
+# can be used in conjunction with end
+
+
+print(""green", "egg", "ham")
+green
+egg
+ham 
+
+print(""green", "egg", "ham", end="", sep="-")
+green-egg-ham
+
+print(""green", "egg", "ham", end="", sep="")
+green egg ham
+
+print(""green", "egg", "ham", end="@", sep="")
+green@ egg@ ham@
+
