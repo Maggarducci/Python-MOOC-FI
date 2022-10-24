@@ -1,0 +1,44 @@
+#Arithemetic operations and f strings
+
+Using f strings you can place formulas inside of print statements
+
+days = int(input("How many days?"))
+# using f string format with calcultion inside f statement
+print(f"Seconds in that many days: {days*24*60*60}")
+
+
+
+
+
+
+
+#Example using corder of operations inside of f statement instead of making new variable (unsure if this is good practice)
+
+times = int(input("How many times a week do you eat at the student cafeteria?"))
+
+price = float(input("The price of a typical lunch?"))
+
+money = float(input("how much money do you spend on groceries in a week?"))
+
+print("Average food expenditure:")
+print(f"Daily: {((times*price+money)/7)} euros")
+print(f"Weekly: {times*price+money} euros")
+
+
+
+
+
+
+
+
+#Using modulo and division operators combined with if statement
+
+numstudents = int(input("How many students on the course?"))
+groupsize = int(input("Desired group size?"))
+
+numgroups = numstudents//groupsize
+
+if numstudents%groupsize  > 0:
+    numgroups += 1
+
+print(f"Number of groups formed: {numgroups}")
