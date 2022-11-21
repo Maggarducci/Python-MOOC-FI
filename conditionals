@@ -1,0 +1,71 @@
+num = int(input("Please type in a number:"))
+
+if num <1000:
+    print("This number is smaller than 1000")
+if num <100:
+    print("This number is smaller than 100")
+if num <10:
+    print("This number is smaller than 10")
+
+
+# Write your solution here
+
+
+num1 =int(input("Number 1:"))
+num2 =int(input("Number 2:"))
+
+op = input("Operation:")
+
+if op == "add":
+    print(f"{num1} + {num2} = {num1+num2}")
+if op == "subtract":
+    print(f"{num1} - {num2} = {num1-num2}")
+if op == "multiply":
+    print(f"{num1} * {num2} = {num1*num2}")
+
+
+
+
+
+# Write your solution here
+
+temperature = int(input("Please type in a temperature (F):"))
+ctemp = (temperature-32)*5/9
+
+print(f"{temperature} degrees Fahrenheit equals {ctemp} degrees Celsius")
+
+if ctemp <0:
+    print("Brr! It's cold in here!")
+
+
+
+
+# Write your solution here
+#inputs wage, hrs, day
+#outputs pay
+
+wage = float(input("Hourly Wage:"))
+hrs = int(input("Hours worked:"))
+day = input("Day of the week:")
+
+if day == "Sunday":
+    wage=wage*2
+
+print(f"Daily wages: {wage*hrs} euros")
+
+
+
+
+# Fix the program
+points = int(input("How many points are on your card? "))
+if points < 100:
+    points *= 1.1
+    print("Your bonus is 10 %")
+
+else:
+    points *= 1.15
+    print("Your bonus is 15 %")
+
+print("You now have", points, "points")
+
+
