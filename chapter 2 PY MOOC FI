@@ -1,0 +1,9 @@
+Syntax is the nature of the coding language and throws easy ot fix errors due to the code not working
+Debugging is performed due to non syntax errors that result in undesireable outcomes from the syntactically correct code
+
+Debugging ideas:
+1. hard code variables that the user inputs normally and comment out the input lines to see if the expressions are correct
+2. then add debugging print statemnts to code to see the values (debuggin line by line with software works but this is file  for manual debugging)
+if they dont print then something is wrong at the conditional statement level
+3. Use booleans to check conditional statement
+4. remove all debugging print statements
