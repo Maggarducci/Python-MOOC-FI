@@ -1,0 +1,40 @@
+#inputs (int temp, rain boolean,)
+#conditions (temp >20, 10,5, rain )
+# output text jeans tshirt >20, jumper as well>10, jacket>5, warm coatgloves <5, umbrella for true rain
+
+print("what is the weather forecast for tomorrow?")
+temper=int(input("Temperature:"))
+rain= input("Will it rain (yes/no):")
+
+if temper>=20:
+    print("Wear jeans and a T-shirt")
+if temper <=20 and temper>10:
+    print("Wear jeans and a T-shirt\nI recommend a jumper as well")
+if temper <=10 and temper >5:
+        print("Wear jeans and a T-shirt\nI recommend a jumper as well\nTake a jacket with you")
+if temper <=5:
+    print("Wear jeans and a T-shirt\nI recommend a jumper as well\nTake a jacket with you\nMake it a warm coat, actually\nI think gloves are in order")
+
+#rain boolean is always performed last and independent of temp
+if rain == "yes":
+    print("Don't forget your umbrella!")
+    
+    
+    ---------------------------------------------------------------
+    
+    # Let's take the square root of math-module in use
+from math import sqrt
+#input, a, b, c
+#calculate
+#output
+a=int(input("Value of a:"))
+b= int(input("Value of b"))
+c= int(input("Value of c:"))
+
+
+solution_pos=(-b+ sqrt(b**2 - 4*a*c))/(2*a)
+solution_neg = (-b-sqrt(b**2 - 4*a*c))/(2*a)
+
+print(f"The roots are {solution_pos} and {solution_neg}")
+# Note that the square root can also be calculated using power.
+# sqrt(9) is equivalent to 9 ** 0.5
