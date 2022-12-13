@@ -1,0 +1,51 @@
+BASIC LOOPS WEEK 2 PYTHON
+WORKING ON LOOPS and CONDITIONALS WITHJ BREAK STATEMENTS
+SATISFYING MULTIPLE DESIRED INPUTS 
+
+
+
+# simple loop countdown withprint statement outside of loop after break is satisfied
+
+number = 5
+print("Countdown!")
+while True:
+  print(number)
+  number = number - 1
+  if number == 0:
+    break
+    
+print("Now!")
+
+
+
+
+
+
+# looping until specific input is satisifed
+
+while True:
+    print("hi")
+    shall=input("Shall we continue?")
+     
+    if shall=="no":
+        break
+print("okay then")
+
+
+
+
+
+
+
+# looping until input is satisfied, contains a second triggering condition with print statement
+
+from math import sqrt
+while True:
+    num=int(input("Please type in a number:"))
+    if num == 0:
+        break
+    elif num <0:
+        print("Invalid number")
+    else:
+        print(sqrt(num))
+print("Exiting...")
