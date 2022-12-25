@@ -1,0 +1,50 @@
+# variables outside of while loop
+words = ""
+word2 = ""
+
+while True:
+    word = input("Please type in a word:")
+
+    if word == "end" or word == word2:
+        break
+    
+    word2 = word
+    # checks for repet word with temporry variable tht is replaced with each user input
+    
+    words += word + " "
+    #creates list of user imputs created in while loop
+			
+print(words)
+
+
+
+
+
+
+
+# asks for numbers from user, prints sum, mean, num of positives, num of negatives
+# brreak placed early in while loop to avoid having the breaking zero input affect calculations
+
+print("Please type in integer numbers. Type in 0 to finish.")
+count = 0
+sum = 0 
+pos = 0
+neg = 0
+
+while True:
+    num = int(input("Number:")) 
+    # if statemet is placed before the count and sum are incremented to avoid letting the 0 entry affect the calculation
+    if num == 0:
+        break
+    if num > 0:
+        pos += 1
+    if num < 0 :
+        neg += 1
+    count += 1
+    sum += num
+
+print(f"Numbers typed in {count}")
+print(f"The sum of the numbers is {sum}")
+print(f"The mean of the numbers is {sum/count}")
+print(f"Positive number {pos}")
+print(f"Neagtive numbers {neg}")
