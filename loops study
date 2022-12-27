@@ -1,0 +1,19 @@
+Notes on loops with conditions
+
+generally you 
+
+1. INITIALIZE (iterator variables)
+
+2. CONDITION  (determines how many times the loop is performed)
+
+3. UPDATE (update variables to monitor multiple states of variables, avoids infinite loops)
+
+
+tips for better code::::
+
+hard coding values wthat will be entered by user
+# explain the hard value in code
+
+example:
+
+limit = 8 # var = int(input("Enter the limit"))
