@@ -1,0 +1,78 @@
+# LIMIT
+
+num = 2
+
+while num < 31:
+    print(num)
+
+    num += 2
+
+
+
+
+
+
+
+# POWER OF 2
+num = 1
+upper_limit = int(input("Upper limit:"))
+
+while num <= upper_limit:
+    print(num)
+
+    num = num*2
+
+
+
+
+
+
+# BASE OTHER THAN 2
+
+num = 1
+
+upper_limit = int(input("Upper limit:"))
+base = int(input("Base:"))
+
+
+while num <= upper_limit:
+    print(num)
+
+    num = num*base
+
+
+# SUMMATION WITHOUT TRANSPARENCY
+upper = int(input("Limit:"))
+
+num = 1
+tot = 0
+
+
+while tot < upper:
+    
+    tot = tot + num
+    num += 1
+
+    
+
+print(tot)
+
+
+
+
+# SUMMATION, LIMITS AND F STRINGS COMBINED WITH TRANSPARENCY
+limit = int(input("Limit: "))
+
+x = 1
+total = 0
+phrase = f"The consecutive sum:  "
+
+while total < limit:
+    total = total + x
+    phrase += f" {x}"
+    x+=1
+
+    if total<limit:
+        phrase += " + "
+
+
