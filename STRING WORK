@@ -1,0 +1,61 @@
+# MULTIPLYING STRINGS
+words = input("Please type a string:")
+reps = int(input("Please type in an amount:"))
+
+print(words*reps)
+
+
+
+
+
+
+# USING LENGTH FUNCTION AND F STRINGS
+
+input1 = input("Please type in string 1:")
+input2 = input("Please type in string 2:")
+
+if len(input1) > len(input2):
+    print(f"{input1} is longer")
+elif len(input2) > len(input1):
+    print(f"{input2} is longer")
+else:
+    print("The strings are equally long")
+
+
+
+# Write your solution here
+# input string
+#calculation var  lengthof string, while loop length decrementing to -(len(string))
+#output string
+string_in = input("Please type in a string:")
+index = -1
+
+while index >= -(len(string_in)):
+    print(string_in[index])
+    index -= 1
+
+
+
+
+# INDEXING AND NEGATIVE INDEXING, MATCHING
+
+string_in = input("Please type in a string:")
+
+if string_in[1] != string_in[-2]:
+    print("The second and the second to last characters are different")
+else:
+    print(f"The second and the second to last characters are {string_in[1]}")
+
+
+
+# ROWS OF MULTIPLICATIONS OF STRINGS
+input_width = int(input("Width:"))
+input_height = int(input("Height:"))
+
+counter = 0
+
+
+
+while counter < input_height:
+    print(input_width*"#")
+    counter += 1
